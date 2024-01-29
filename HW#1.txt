@@ -2,7 +2,10 @@
 
 <body> 
 
-<p> The god of all life is death. </p>
+<p> Hello! My name is Matthew and I am a Philosophy major and Computer Science minor. I have an orange cat named
+William (short version) and a lizard. After I graduate, I plan to work in the tech sector for a couple of years
+before coming back to college to get a masters in Cyber Security. 
+</p>
 
 </body> 
 
