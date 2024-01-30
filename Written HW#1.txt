@@ -3,30 +3,31 @@ CISC 3300 HW#1
 1/27/2024
 
 
-1. 1. Your browser connects to the Domain Name System (DNS) to find the location of the web server hosting the website you visit. They tell the IP address (unique number) associated with the web server.
+1. 1
+a. Your browser connects to the Domain Name System (DNS) to find the location of the web server hosting the website you visit. They tell the IP address (unique number) associated with the web server.
 
 
-2. You need an internet service provider (ISP) to get on the internet (Optimum, Spectrum, etc). They provide you with reception or wifi to use the internet and you can type a domain name or web address to visit a site from there (goolge.com, sefari.com, etc) 
+b. You need an internet service provider (ISP) to get on the internet (Optimum, Spectrum, etc). They provide you with reception or wifi to use the internet and you can type a domain name or web address to visit a site from there (goolge.com, sefari.com, etc) 
 
 
-3. A URL is nothing more than the address of a given unique resource on the Web. In theory, each valid URL points to a unique resource. 
+c. A URL is nothing more than the address of a given unique resource on the Web. In theory, each valid URL points to a unique resource. 
 
 
-4. A web server is a computer constantly connected to the internet and is set up to send web pages to users who request them. 
+d. A web server is a computer constantly connected to the internet and is set up to send web pages to users who request them. 
 
 
-2. HTML (or Hyper Text Markup Language) is a markup language that allows you to create and structure        web pages. It is used ubiquitously throughout the internet in various company web pages. 
+2. HTML (or Hyper Text Markup Language) is a markup language that allows you to create and structure web pages. It is used ubiquitously throughout the internet in various company web pages. 
 
 
-3. The fordham website structures itself by using large images to convey information about the school such as what the campus looks like and current news surrounding the school. It is easily readable and has all sorts of links to different resources to make it accessible and informative. 
+3. The fordham website structures itself by using large images to convey information about the school such as what the campus looks like and current news surrounding the school. It is easily readable and has all sorts of links to different resources that make the page informative and easy to understand. 
 
 
 4. 
-1. Tags act like containers of information. They tell you something about the data they contain. Ex: <body>, <text>, <p>
+a. Tags act like containers of information. They tell you something about the data they contain. Ex: <body>, <text>, <p>
 
 
-2. Elements and tags are interchangeable but, more specifically, an element comprises the opening tag, closing tag, and information in between them. 
+b. Elements and tags are interchangeable but, more specifically, an element comprises the opening tag, closing tag, and information in between them. 
         Ex: <body> … </body>, <text> … </text>, <p> … </p>
 
 
-3. Attributes provide additional information about the contents of an element. They appear at the beginning of a tag and are made of a name and a value separated by an equal sign. Ex: width, height, alt
+c. Attributes provide additional information about the contents of an element. They appear at the beginning of a tag and are made of a name and a value separated by an equal sign. Ex: width, height, alt
