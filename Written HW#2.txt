@@ -1,0 +1,106 @@
+﻿Matthew Malefyt
+CISC 3300 HW#2
+1/27/2024
+
+
+
+
+
+
+1.  
+1. When elements are described as semantic they are text elements that are not meant to change the structure of web pages but add extra information. 
+2. Elements denoted as structural are elements used to describe headings and paragraphs, affecting the structure of web pages. 
+
+
+2. Correct html elements are essential when designing web pages because they control the structure of the page (headings, paragraphs) and provide semantic information (where emphasis is placed, what text is a quotation). If these elements are used incorrectly then the web page will have poor structure and the user will not be able to easily navigate or properly understand the page. 
+
+
+3. In HTML, forms are tools that can be used to gather user information. Forms allow for easy user interface and are commonly used to by a many companies to gather data. The type of form that should be used is based on context. For instance, use check boxes when you have a question with more than one response or use radio buttons with questions that only have one answer.  
+ 
+4. 1. Inline elements are elements that will always continue to be on the same line as their neighbor. Examples include <span> and <text> 
+2. On the other hand, block elements are elements that will always appear on a new line in the browser window. Examples include <h1> and <li> 
+
+
+5.  
+
+
+
+
+
+
+<html> 
+<body>
+<h1> Store Universal </h1> 
+<h4> Buy all your celestial objects right here!!! <h4>
+ 
+<p>                 
+For all you space collectors, get anything and everything in your night sky! 
+Do you want a white dwarf to go with your vacation planet, we’ve got you covered. 
+Do you want an extra moon to go with your home planet, come right on down. 
+Come on down to your nearest Store Universal within the NEXT MILLENNIA and we
+will give you a beautiful O-star only a couple thousand years from its super nova for free!!    </p> 
+<h4> Here is what we have on our display right now: <h4> 
+
+
+<ul> 
+        <li> 2 G-stars </li> 
+        <li> 3 white dwarfs <li> 
+        <li> 17 terrestrial planets </li> 
+        <li> 4 jovian planet </li> 
+        <li> Prized Type O Star </li>
+</ul> 
+
+
+<img width= “100” height = “100” src=”https://www.google.com/url?sa=i&url=https%3A%2F%2Fforums.frontier.co.uk%2Fthreads%2Flist-of-o-type-stars.317606%2F&psig=AOvVaw1XIDyhcNFLpaGsaWKRm0dU&ust=1706553616340000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLCuxejdgIQDFQAAAAAdAAAAABAD” alt=“Picture of Type O Star”  />
+
+
+
+
+
+
+
+
+<form action= “https://www.example.com/subscribe.php”> 
+<p> Username: 
+<input type=”text” name=”username” size=”15”
+maxlength= “30” />
+</p> 
+
+
+<p> 
+<input type=”password” name=”password” size=”15”
+Maxlength=”30” />
+</p>
+</form>
+ 
+
+
+
+
+<table> 
+        <tr>
+        <th> </th> 
+        <th> More stuff </th>
+        <td> We have this </td> 
+        <td> and this </td> 
+        <td and this </td> 
+        </tr> 
+
+
+        <tr> 
+        <th> Even more stuff </th>
+        <td> and this </td> 
+        <td> and this </td> 
+        <td> and this </td> 
+        </tr> 
+</table> 
+
+
+
+
+<div> This is what it looks like to have one line. </div> 
+<div> Another line is right under it. </div>
+
+
+        <span> lines grouped together baby </span> 
+        <span> lines stick oh yeah they do </span>
