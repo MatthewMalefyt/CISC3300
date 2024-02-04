@@ -1,0 +1,27 @@
+﻿Matthew Malefyt
+CISC 3300
+HW#3
+
+
+
+
+3. Margin, padding, and border
+1. Borders separate the edge of one box from another
+2. Margins are outside the edge of the border where they determine the space between borders of adjacent boxes 
+3. Padding is the space between the border of a box and the content inside of it. Padding separates the content of the box from its edges. 
+
+
+4. Flexbox rules: 
+1. Display:flex - Defines a flex container which can be inline or block depending on the given value. It enables a flex context for all its direct children.
+
+
+2. Flex-direction: Defines the direction flex items are placed in the flex container (establishes the main-axis). Flexbox is (aside from optional wrapping) a single-direction layout concept. Flex items primarily lay out either in horizontal rows or vertical columns.
+
+
+3. Flex-wrap: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+
+
+4. justify-content/align-items: Justify-content defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line. /// Align-items defines the default behavior for how flex items are laid out along the cross axis on the current line. 
+
+
+5. Align-content: This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
