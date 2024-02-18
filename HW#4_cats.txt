@@ -66,7 +66,7 @@ cats.forEach(cat => {
 });
 
 if (result.length > 0) {
-    const output = `Congratulations! You have adopted ${result.length === 1 ? 'a cat named' : 'cats named'} ${result.join(', ')}.`;
+    const output = "Congratulations! You have adopted a cat";
     console.log(output);
 
 } else {
