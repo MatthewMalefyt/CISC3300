@@ -1,0 +1,18 @@
+﻿Matthew Malefyt
+Professor Hishon 
+HW#4
+
+
+ 
+1.  JavaScript  is a ubiquitous-used object-oriented programming language. A compiled language is converted into usable code so that the processor can execute it. An interpreted language is a language where implementations execute instructions directly without compiling a program into machine language beforehand. Overall, compiled programs run faster than interpreted programs.
+
+
+2. 1. Var declares variables. 
+2. Let declares block-scoped variables.
+3. Const declares variables that can’t be changed.
+
+
+3. An anonymous function is a function that has no name in that it does not have any identification when created. 
+
+
+4. A javaScript object is an item in a state and with a behavior. JavaScript objects are different than in other languages because inherit objects of one object can be reused by other objects.
