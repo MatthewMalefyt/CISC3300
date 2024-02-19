@@ -12,7 +12,7 @@ HW#4
 3. Const declares variables that can’t be changed.
 
 
-3. An anonymous function is a function that has no name in that it does not have any identification when created. 
+3. A anonymous function is a function that has no name in that it does not have any identification when created. 
 
 
 4. A javaScript object is an item in a state and with a behavior. JavaScript objects are different than in other languages because inherit objects of one object can be reused by other objects.
