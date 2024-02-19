@@ -7,12 +7,15 @@ HW#4
 1.  JavaScript  is a ubiquitous-used object-oriented programming language. A compiled language is converted into usable code so that the processor can execute it. An interpreted language is a language where implementations execute instructions directly without compiling a program into machine language beforehand. Overall, compiled programs run faster than interpreted programs.
 
 
-2. 1. Var declares variables. 
-2. Let declares block-scoped variables.
-3. Const declares variables that can’t be changed.
+2. 
+a. Var is a key word used to declare variables and is scoped to the entire function they are declared in. Var can declare global-scoped variables.
+b. Let is a key word that declares block-scoped variables. This means that the variable is only accessible within the code block between the curly brackets. In using Let, you avoid creating global variables and hoisting. 
+c. Const is similar to both Let and Var as const can be scoped to both blocks and functions but once declared it cannot be changed throughout the entire code.
 
 
-3. A anonymous function is a function that has no name in that it does not have any identification when created. 
+3. 
+a. A anonymous function is a function that has no name in that it does not have any identification when created. 
+b. A higher-order function is a function which accepts other functions as parameters and/or returns a function. You can think of it like a function that has influence over other functions or an employer that has influence over their employees.
 
 
-4. A javaScript object is an item in a state and with a behavior. JavaScript objects are different than in other languages because inherit objects of one object can be reused by other objects.
+4. A javaScript object is an item in a state and with a behavior. JavaScript objects are different than in other languages because an object can be created by defining its properties and methods directly without the need for a class. Additionally, objects can inherit properties and methods from other objects. 
