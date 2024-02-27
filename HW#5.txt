@@ -1,0 +1,94 @@
+1. 
+
+var yes = 1;
+var status = yes >= 1 ? 'affirmative' : 'negative';
+
+console.log(status); // Output: affirmative 
+
+2. 
+
+// Creating an object
+var person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+// Looping through object properties
+for (var key in person) {
+  if (person.hasOwnProperty(key)) { // To ensure that only own properties are logged
+    console.log(key + ': ' + person[key]);
+  }
+}
+
+3. 
+
+// Creating an array of numbers
+var numbers = [1, 2, 3, 4, 5];
+
+// Using the map function to create a second array of squared numbers
+var squaredNumbers = numbers.map(function(number) {
+  return number * number;
+});
+
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+4. 
+
+The Document Object Model (DOM) is a cross-platform and language-independent 
+interface that treats an HTML as a tree structure. Each
+node is an object that represents a part of a document.
+The DOM represents a document with a logical tree.
+
+5. 
+
+Cross-Site Scripting (XSS) attacks are a type of cyber attack where malicious
+ scripts are injected into otherwise benign and trusted websites. 
+XSS attacks occur when an attacker uses a web application to send 
+malicious code to a different end user. The attack generally involves
+a tag attached to the code which is used to be injected into the code.
+
+6. 
+
+a. 
+
+<button id="myButton">Click me</button>
+
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+    this.textContent = "Text changed";
+  });
+</script>
+
+b. 
+
+<ul id="List">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<script>
+  var listItems = document.querySelectorAll("#List li");
+  listItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+      listItems.forEach(function(li) {
+        li.style.color = "blue";
+      });
+    });
+  });
+</script>
+
+c. 
+
+<div id="myDiv">
+  <button id="mySecondButton">Click me to add a paragraph</button>
+</div>
+
+<script>
+  document.getElementById("mySecondButton").addEventListener("click", function() {
+    var paragraph = document.createElement("p");
+    paragraph.textContent = "This is a new paragraph";
+    document.getElementById("myDiv").appendChild(paragraph);
+  });
+</script>
