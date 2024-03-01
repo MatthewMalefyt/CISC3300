@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Info</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Concert+One&family=Raleway&family=Rubik+Doodle+Shadow&family=Titan+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkblue;
+        }
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", sans-serif;
+            font-size: 6rem; 
+        }
+
+        h2 {
+            font-size: 4rem; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Georgia, sans-serif
+        }
+        p {
+            font-size: 3rem; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+
+    <div id="weather-info">
+        <p>Loading weather data...</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $.getJSON("https://api.open-meteo.com/v1/forecast", {latitude: 40.73, longitude: -73.93, current: "temperature_2m,wind_speed_10m", hourly: "temperature_2m,relative_humidity_2m,wind_speed_10m"})
+            .done(function(data) {
+                let currentWeather = data.current;
+
+                let weatherInfo = "<h2>Current Weather in New York:</h2>";
+                weatherInfo += "<p><b>Time: </b>" + currentWeather.time + "</p>";
+                weatherInfo += "<p><b>Temperature: </b>" + currentWeather.temperature_2m + "°C</p>";
+                weatherInfo += "<p><b>Wind Speed: </b>" + currentWeather.wind_speed_10m + " m/s</p>";
+
+                // append info to weather-info div 
+                $("#weather-info").html(weatherInfo);
+            })
+            .fail(function(jqxhr, textStatus, error) {
+                // error if error in fetching the data 
+                $("#weather-info").html("<p>Error fetching weather data: " + error + "</p>");
+            });
+        });
+    </script>
+</body>
+</html>
