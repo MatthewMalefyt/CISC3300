@@ -1,0 +1,28 @@
+1. HTTP (Hypertext Transfer Protocol) is a collection of request
+ methods that specify what action is to be performed on a particular resource. 
+The most common are GET, POST, PUT, PATCH, and DELETE which respectively
+create, read, update, and delete a chosen resource. 
+
+2. 
+An API (Application Programming Interface) define the rules and protocols
+ that allows different software applications to communicate and share data
+or functionality with each other. They allow developers to gain access
+to another software system, service, or platform without needing to
+ understand its internal workings.
+
+JSON (JavaScript Object Notation) is standard text-based
+ format that is easy for humans to read and write and easy for machines to
+ parse and generate. It is language-independent meaning it can be used with any
+ programming language.
+
+3. 
+Asynchronous JavaScript and XML (AJAX) is set of programming techniques 
+that utilize JavaScript to exchange data between a web browser
+and a web server without making the user wait for this process to be 
+completed. AJAX is used to enhance the interactivity of webpages.
+
+Asynchronous code is code that does not block user input 
+while one or more operations are in progress. With this programming, 
+multiple related operations can run at the same time 
+without having to wait for other tasks to complete.
+
