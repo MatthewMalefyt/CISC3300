@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>Weather Information</h1>
+<div id="weather-info"></div>
+
+<script>
+  // Function to fetch weather data and display it
+  function fetchWeather() {
+    const apiKey = 'your-api-key'; // Replace 'your-api-key' with your actual API key
+    const apiUrl = `https://api.open-meteo.com/weather`;
+
+    $.get(`${apiUrl}?latitude=YOUR_LATITUDE&longitude=YOUR_LONGITUDE&current_weather=true&timezone=auto&appid=${apiKey}`, function(data) {
+      // Extract relevant weather information from the response
+      const temperature = data.current_weather.temperature.value;
+      const weatherDescription = data.current_weather.weather.description;
+      
+      // Create HTML elements to display weather information
+      const weatherInfoElement = `
+        <p>Temperature: ${temperature} °C</p>
+        <p>Weather: ${weatherDescription}</p>
+      `;
+      
+      // Append weather information to the div
+      $('#weather-info').html(weatherInfoElement);
+    });
+  }
+
+  // Call the fetchWeather function when the page loads
+  $(document).ready(function() {
+    fetchWeather();
+  });
+</script>
+
+</body>
+</html>

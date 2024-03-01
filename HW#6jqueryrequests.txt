@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Server Requests</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<script>
+  // Base URL of your JSON server
+  const baseUrl = "http://your-json-server-url.com";
+
+  // GET request to fetch data from a resource
+  $.get(`${baseUrl}/resource`, function(data) {
+    console.log("GET Response:", data);
+  });
+
+  // POST request to add a new resource
+  $.ajax({
+    url: `${baseUrl}/resource`,
+    type: "POST",
+    contentType: "application/json",
+    data: JSON.stringify({
+      key1: "value1",
+      key2: "value2"
+    }),
+    success: function(response) {
+      console.log("POST Response:", response);
+    },
+    error: function(xhr, status, error) {
+      console.error("POST Error:", error);
+    }
+  });
+
+  // PUT request to replace a previous resource
+  $.ajax({
+    url: `${baseUrl}/resource/1`, // Assuming you're replacing resource with ID 1
+    type: "PUT",
+    contentType: "application/json",
+    data: JSON.stringify({
+      key1: "new_value1",
+      key2: "new_value2"
+    }),
+    success: function(response) {
+      console.log("PUT Response:", response);
+    },
+    error: function(xhr, status, error) {
+      console.error("PUT Error:", error);
+    }
+  });
+</script>
+
+</body>
+</html>
