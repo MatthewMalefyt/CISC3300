@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Server Requests</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <script>
+        // GET request 
+        $(document).ready(function () {
+            $.ajax({
+                url: 'http://localhost:3000/posts',
+                success: function (data) {
+                    console.log('GET request successful:', data);
+                },
+                error: function (error) {
+                    console.error('Error in GET request:', error);
+                }
+            });
+        
+            // POST request to add new post 
+            var newPost = {
+                id: '3',
+                title: 'New post',
+                views: '250'
+            };
+
+            $.ajax({
+                url: 'http://localhost:3000/posts', 
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(newPost),
+                success: function (data) {
+                    console.log('POST request successful:', data);
+                },
+                error: function (error) {
+                    console.error('Error in POST request:', error);
+                }
+                });
+
+            // PUT Request 
+            var updatedData = {
+                id: '2',
+                title: 'Second Post',
+                views: '300'
+            };
+
+            $.ajax({
+                url: 'http://localhost:3000/posts/2', 
+                method: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(updatedData),
+                success: function (data) {
+                    console.log('PUT request successful:', data);
+                },
+                error: function (error) {
+                    console.error('Error in PUT request:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
