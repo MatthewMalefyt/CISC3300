@@ -1,0 +1,47 @@
+1. Escaping data is the process of securing output data by removing 
+unwanted data such as malformed HTML or script tags (fix syntax).
+This process helps secure data before rendering it for the end user.
+Additionally, it helps prevent XSS attacks by converting key characters
+of data (such as < and > for HTML) which prevents them from being interpreted
+in a dangerous context.
+
+2. 
+a. REST (REpresentational State Transfer) is a style 
+for providing standards between computer systems on the web, making it 
+easier for systems to communicate with each other. Systems following this
+style, often called RESTful systems, are characterized by being 
+stateless and separating the concerns of client and server. 
+Stateless means that the server does not need to know 
+anything about the state of the client and vice versa.
+
+b. Resources describe any object, document, 
+or thing that you may need to store or send to other services.
+
+c.
+i.
+GET http://fashionboutique.com/customers
+Accept: application/json
+ii.
+GET http://fashionboutique.com/customers/123
+Accept: application/json
+iii.
+PUT http://fashionboutique.com/customers/123
+Body:
+{
+  “customer”: {
+    “name” = “Scylla Buss”,
+    “email” = “scyllabuss1@codecademy.com”
+  }
+}
+
+3. Cookies are small pieces of text sent to your browser by a website you
+just visited. They allow the website to track what you did while on the site 
+which can both make it easier to visit the site again and make the site more 
+useful to you.
+
+4.
+A session is a set of interactions the user has with your website within 
+a given time frame. For example, a single session can contain multiple 
+page views, events, social interactions, and ecommerce transactions.
+
+
