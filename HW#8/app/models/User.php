@@ -4,7 +4,7 @@ namespace app\models;
 
 class User
 {
-    public function getAllUsersByName($name) {
+    public function getAllUsers() {
         //in future this will come from the database
 
         $allUsers = [
@@ -18,7 +18,7 @@ class User
             ]
         ];
 
-        //filter by query string
+   /*     //filter by query string
         return array_filter($allUsers, function ($user) use ($name) {
             if ($user['name'] === $name) {
                 return $user;
@@ -29,7 +29,8 @@ class User
     }
 
     public function saveUsers() {
-
+    */
+        
     }
 }
 
