@@ -1,5 +1,8 @@
 <?php
 
+namespace app\controllers;
+use public\assets/views\users\postsView.php; 
+
 class PostController
 {
     public function getUsers()
@@ -12,7 +15,7 @@ class PostController
         exit();
     }
 
-    public function saveUser()
+    public function Uservalidate()
     {
         // Check if POST request
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,6 +34,18 @@ class PostController
                 $errors['requiredName'] = 'Name is required';
             }
 
+             if ($description) {
+            $description = htmlspecialchars($description, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
+
+            //validate description length
+            if (strlen($description) < 2) {
+                $errors['titleShort'] = 'description is too short';
+            }
+        } else {
+            $errors['descriptionRequired'] = 'description is required';
+        }
+            
+            /*
             // Validate description
             if ($description) {
                 // Corrected regex pattern
@@ -41,7 +56,8 @@ class PostController
             } else {
                 $errors['descriptionRequired'] = 'Description is required';
             }
-
+            */
+            
             // If there are errors, return error response
             if (count($errors)) {
                 http_response_code(400);
