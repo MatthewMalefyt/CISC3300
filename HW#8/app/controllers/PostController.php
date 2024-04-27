@@ -14,7 +14,7 @@ class PostController
         exit();
     }
 
-    public function Uservalidate()
+    public function saveUser()
     {
         // Check if POST request
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
