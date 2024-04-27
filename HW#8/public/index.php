@@ -11,7 +11,7 @@ $uri = strtok($_SERVER["REQUEST_URI"], '?');
 
 if ($uri === '/view-users' && $_SERVER['REQUEST_METHOD'] === 'GET') {
     $postController = new PostController();
-    $postController->usersView();
+    $postController->postsView();
 }
 
 if ($uri === '/posts' && $_SERVER['REQUEST_METHOD'] === 'GET') {
