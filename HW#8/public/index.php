@@ -21,7 +21,7 @@ if ($uri === '/posts' && $_SERVER['REQUEST_METHOD'] === 'GET') {
      create_post();
 }
 
-if ($uri === '/users' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($uri === '/submit_post' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     $postController = new PostController();
     $postController->saveUser();
 }
