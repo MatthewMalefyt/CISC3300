@@ -25,7 +25,7 @@ ii.
 GET method; http://fashionboutique.com/customers/123
 Accept: application/json
 iii.
-PUT method; http://fashionboutique.com/customers/123
+POST method; http://fashionboutique.com/customers/123
 
 3. Cookies are small pieces of text sent to your browser by a website you
 just visited. They allow the website to track what you did while on the site 
