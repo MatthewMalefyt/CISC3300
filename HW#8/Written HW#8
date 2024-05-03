@@ -19,20 +19,13 @@ or thing that you may need to store or send to other services.
 
 c.
 i.
-GET http://fashionboutique.com/customers
+GET method; http://fashionboutique.com/customers
 Accept: application/json
 ii.
-GET http://fashionboutique.com/customers/123
+GET method; http://fashionboutique.com/customers/123
 Accept: application/json
 iii.
-PUT http://fashionboutique.com/customers/123
-Body:
-{
-  “customer”: {
-    “name” = “Scylla Buss”,
-    “email” = “scyllabuss1@codecademy.com”
-  }
-}
+PUT method; http://fashionboutique.com/customers/123
 
 3. Cookies are small pieces of text sent to your browser by a website you
 just visited. They allow the website to track what you did while on the site 
